@@ -12,7 +12,7 @@
 <p>The methods used in ClonalFrame are presented in the paper “Inference of bacterial microevolution using multilocus sequence data” by <a href="http://www.genetics.org/cgi/content/abstract/175/3/1251">Didelot and Falush (2007)</a>, which is the appropriate citation for this program.</p>
 
 <h2>Download and Installation</h2>
-You can obtain the source code of ClonalFrame via GIT using the command:
+You can obtain the source code of ClonalFrame by clicking on the "Code" green button at the top of this page and then "Download zip", or via git using the command:
 
 ```
 git clone https://github.com/xavierdidelot/ClonalFrame
