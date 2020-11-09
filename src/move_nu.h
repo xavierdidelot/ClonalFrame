@@ -20,7 +20,7 @@
 #ifndef WBMOVE_NU_H
 #define WBMOVE_NU_H
 
-#include <move.h>
+#include "move.h"
 #include <gsl/gsl_sf_exp.h>
 
 namespace wb {

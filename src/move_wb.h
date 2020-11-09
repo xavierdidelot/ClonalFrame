@@ -20,7 +20,7 @@
 #ifndef STDMOVE_WB_H
 #define STDMOVE_WB_H
 
-#include <move.h>
+#include "move.h"
 #include "move_hidden.h"
 #include <sys/time.h>
 

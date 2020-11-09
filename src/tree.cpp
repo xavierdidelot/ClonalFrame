@@ -355,6 +355,20 @@ namespace wb {
         gsl_vector_int_free(freqs);
     }
 
+    void Tree::ungap2(gsl_vector_char * seq,Param * p,gsl_matrix * d,int ind) {
+        for (int pos=0;pos<p->a->getL();pos++) {
+	    if (gsl_vector_char_get(seq,pos)!='N') continue;
+            int which=-1;
+	    double minDist=0.0;
+	    for (int j=0;j<p->a->getN();j++) {
+	        if (j==ind) continue;
+                if (p->a->getData(j,pos)=='N') continue;
+		if (which==-1 || gsl_matrix_get(d,ind,j)<minDist) {minDist=gsl_matrix_get(d,ind,j);which=j;}
+	    }
+            gsl_vector_char_set(seq,pos,p->a->getData(which,pos));
+	}
+    }
+
     void Tree::fixtimes(double tottime)
     {
         age=tottime-age;

@@ -64,7 +64,7 @@ namespace wb {
             clusters[i]->n=1;
             for (int j=0;j<p->a->getL();j++)
                 gsl_vector_char_set(clusters[i]->ancSeq,j,p->a->getData(i,j));
-            ungap(clusters[i]->ancSeq,p);
+            ungap2(clusters[i]->ancSeq,p,d,i);
             (*where)[i]=clusters[i];
         }
 

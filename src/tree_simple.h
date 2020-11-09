@@ -20,7 +20,7 @@
 #ifndef WBTREE_SIMPLE_H
 #define WBTREE_SIMPLE_H
 
-#include <tree.h>
+#include "tree.h"
 #include "param.h"
 
 

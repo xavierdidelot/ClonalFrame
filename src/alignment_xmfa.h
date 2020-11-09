@@ -20,7 +20,7 @@
 #ifndef WBALIGNMENT_MAUVE_H
 #define WBALIGNMENT_MAUVE_H
 
-#include <alignment.h>
+#include "alignment.h"
 #include <gsl/gsl_math.h>
 #include <string.h>
 #include <vector>

@@ -20,7 +20,7 @@
 #ifndef STDMOVE_HIDDEN_H
 #define STDMOVE_HIDDEN_H
 
-#include <move.h>
+#include "move.h"
 #include <gsl/gsl_matrix.h>
 #include <gsl/gsl_blas.h>
 

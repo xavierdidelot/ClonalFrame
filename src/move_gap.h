@@ -20,7 +20,7 @@
 #ifndef WBMOVE_GAP_H
 #define WBMOVE_GAP_H
 
-#include <move.h>
+#include "move.h"
 
 namespace wb {
 

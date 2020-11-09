@@ -20,7 +20,7 @@
 #ifndef WBMOVE_HIDDEN2_H
 #define WBMOVE_HIDDEN2_H
 
-#include <move.h>
+#include "move.h"
 #include "move_hidden.h"
 
 namespace wb {

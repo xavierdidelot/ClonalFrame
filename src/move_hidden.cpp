@@ -166,7 +166,7 @@ namespace wb
                     sum+=gsl_matrix_get(f,j,i)*q[j][state][site-siteprev-1];
                 gsl_matrix_set(f,state,i+1,sum*gsl_matrix_get(e,state,msgs[site]));
             }
-            Util::normalize(&(gsl_matrix_column(f,i+1).vector));
+            gsl_vector v=gsl_matrix_column(f,i+1).vector;Util::normalize(&v);
         }
         return f;
     }
@@ -420,7 +420,7 @@ namespace wb
                 gsl_matrix_set(e,i+1,2,(1.0-m2)*m3+(1.0-m3)*m2);
             }
 
-            Util::normalize(&(gsl_matrix_row(e,i+1).vector));
+            gsl_vector v=gsl_matrix_row(e,i+1).vector;Util::normalize(&v);
         }
     }
 

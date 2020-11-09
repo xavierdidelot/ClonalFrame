@@ -20,7 +20,7 @@
 #ifndef STDALIGNMENT_STRUCTURE_H
 #define STDALIGNMENT_STRUCTURE_H
 
-#include <alignment.h>
+#include "alignment.h"
 #include <gsl/gsl_blas.h>
 #include <gsl/gsl_matrix.h>
 

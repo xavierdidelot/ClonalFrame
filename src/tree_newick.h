@@ -20,7 +20,7 @@
 #ifndef WBTREE_NEWICK_H
 #define WBTREE_NEWICK_H
 
-#include <tree.h>
+#include "tree.h"
 #include <fstream>
 #include <sstream>
 #include <string>

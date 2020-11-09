@@ -207,8 +207,8 @@ int main(int argc, char *argv[]) {
         case('R'):rhofix=true;break;
         case('T'):topofix=true;break;
         case('A'):agefix=true;break;
-        case('G'):gapfix=true;break;
-        case('H'):gapint=true;break;
+        case('G'):gapfix=true;gapint=false;break;
+        case('H'):gapint=true;gapfix=false;break;
         case('j'):mapfile=optarg;break;
         case('s'):structure=true;break;
         case('t'):treeinit=atoi(optarg);break;

@@ -20,7 +20,7 @@
 #ifndef WBTREE_COAL_H
 #define WBTREE_COAL_H
 
-#include <tree.h>
+#include "tree.h"
 #include "param.h"
 
 namespace wb {

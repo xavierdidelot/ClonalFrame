@@ -20,7 +20,7 @@
 #ifndef WBTREE_UPGMA_H
 #define WBTREE_UPGMA_H
 
-#include <tree.h>
+#include "tree.h"
 #include "param.h"
 
 namespace wb {

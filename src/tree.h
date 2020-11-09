@@ -61,7 +61,8 @@ namespace wb {
         void reverseall();///<Replaces all ll with oldll and all llb wih oldllb in the tree
         char * newick(Tree ** where,Tree ** nodes,int * min);///<Returns the newick string representation of the tree with the additional convention that on an internal node, the child that contains the lowest leaf is placed at the left
         void ungap(gsl_vector_char * seq,Param * p);
-        void fixtimes(double tottime);
+        void ungap2(gsl_vector_char * seq,Param * p,gsl_matrix * d,int ind);
+	void fixtimes(double tottime);
         double depth();
         void count(Param * p,double * mut,double * rec,double * mutrec,gsl_vector_char * cf);///<Counts the number of rec, mut and mutrec events, as well as the proportion of clonal frame
         void countInterIntra(Param *p,int *mutin,int *mutout,int *recin,int *recout);///<Counts the number of mutations inter and intra, and the number of substitutions introduced by recombination which are inter and intra

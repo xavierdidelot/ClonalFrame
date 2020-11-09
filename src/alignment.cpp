@@ -221,6 +221,7 @@ int Alignment::getL()
             for (int k=0;k<getN();k++) if (getData(k,i)-'0'<4) (*gsl_vector_int_ptr(freqs,getData(k,i)-'0'))++;
             if (!onlyNonPoly || gsl_vector_int_max(freqs)==gsl_vector_int_get(freqs,0)+gsl_vector_int_get(freqs,1)+gsl_vector_int_get(freqs,2)+gsl_vector_int_get(freqs,3))
                 setData(j,i,gsl_vector_int_max_index(freqs)+'0');
+	    if (!onlyNonPoly) for (int j2=0;j2<getN();j2++) setData(j2,i,'0');
         }
         makePolySites();
     }
