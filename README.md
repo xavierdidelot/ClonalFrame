@@ -1,5 +1,7 @@
 # ClonalFrame
 
+![GitHub](https://img.shields.io/github/license/xavierdidelot/ClonalFrame)
+
 <h2>Important notice</h2>
 <p>This webpage is about the original ClonalFrame released in 2007 and designed mostly to work on MLST data or small numbers of genomes. In 2015 a new separate software was released called ClonalFrameML which is designed to run on large whole genomes datasets. For more information about ClonalFrameML, see the separate <a href="https://github.com/xavierdidelot/ClonalFrameML">ClonalFrameML website</a>.</p>
 
