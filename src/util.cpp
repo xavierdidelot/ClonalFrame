@@ -93,64 +93,6 @@ fclose(f);
     }
 
 
-    double Util::lBinoProb (int i,int n, double p)
-            /*returns the prob of i successes in n trials with prob of sucess p.*/
-    {
-
-        double logsum = 0.0;
-        double runningtotal = 1.0;
-        int j;
-
-        if (i > (n - i))              /*figure out the n-choose-i part */
-        {
-            for (j = 2; j <= (n - i); j++)
-            {
-                runningtotal /= j;
-                if (runningtotal < UNDERFLOW)
-                {
-                    logsum += gsl_sf_log (runningtotal);
-                    runningtotal = 1.0;
-                }
-            }
-            for (j = i + 1; j <= n; j++)
-            {
-                runningtotal *= j;
-                if (runningtotal > OVERFLOW)
-                {
-                    logsum += gsl_sf_log (runningtotal);
-                    runningtotal = 1.0;
-                }
-            }
-        }
-        else
-        {
-            for (j = 2; j <= i; j++)
-            {
-                runningtotal /= j;
-                if (runningtotal < UNDERFLOW)
-                {
-                    logsum += gsl_sf_log (runningtotal);
-                    runningtotal = 1.0;
-                }
-            }
-            for (j = n - i + 1; j <= n; j++)
-            {
-                runningtotal *= j;
-                if (runningtotal > OVERFLOW)
-                {
-                    logsum += gsl_sf_log (runningtotal);
-                    runningtotal = 1.0;
-                }
-            }
-        }
-        logsum += gsl_sf_log (runningtotal);
-        logsum += i * gsl_sf_log (p);
-        logsum += (n - i) * gsl_sf_log (1 - p);
-
-        return logsum;
-    }
-
-
     double Util::lbetapdf(double x,double a,double b)
     {
         double para[2];
