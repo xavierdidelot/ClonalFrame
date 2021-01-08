@@ -20,7 +20,7 @@ git clone https://github.com/xavierdidelot/ClonalFrame
 
 You can then compile ClonalFrame using:
 ```
-cd ClonalFrame/src;g++ -lgsl *.cpp -o ClonalFrame
+cd ClonalFrame/src;g++ -lgsl -lgslcblas -lm *.cpp -o ClonalFrame
 ```
 
 Compilation requires a C++ compiler, such as [GCC](https://gcc.gnu.org/), to be installed. 
